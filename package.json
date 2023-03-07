@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "playwright": "^1.31.1",
+    "standard": "^17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1"
+  },
+  "name": "scraping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jhon Dev",
+  "license": "ISC",
+  "description": ""
+}

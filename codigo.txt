@@ -1,0 +1,20 @@
+const headers = new Headers();
+headers.append("Content-Type", "application/json");
+
+const email = async (from, to, subject, text, attachment) => {
+  let body = JSON.stringify({
+    from,
+    to,
+    subject,
+    text,
+    attachment
+  });
+
+  await fetch("http://localhost:3000/send-email", {
+    method: "POST",
+    body: body,
+    headers: headers,
+  });
+};
+
+module.exports.email = email;
